@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Dashboard Jabar</title>
+    <link rel="shortcut icon" href="img/logo-dark.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        .topik-populer {
+            left: 100px;
+            top: 750px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .dashboard-terbaru {
+            left: 100px;
+            z-index: 2;
+            margin-top: 350px;
+        }
+
+    </style>
+    
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
+        <div class="container-fluid mt-1 mb-1 ps-5 pe-5 ms-5 me-5">
+            <div class="d-inline-flex align-items-center justify-content-start p-0">
+                <a class="navbar-brand text-dark" href="index.html">
+                    <img alt="Logo Dashboard Jabar" src="img/logo-dark.svg" class="navbar-full">
+                </a>
+                <div class="d-inline-flex align-items-center ms-3 toggle-darkmode">
+                    <a href="javascript:void(0);" aria-label="light mode">
+                        <em placement="bottom" ngbtooltip="Light Mode" class="fas fa-sun"></em>
+                    </a>
+                    <i class="bi bi-brightness-high-fill"></i>
+                    <div class="form-check form-switch ms-2 mb-0">
+                        <input type="checkbox" role="switch" aria-label="darkmode" id="toggleDarkmode" class="form-check-input">
+                        <label for="toggleDarkmode" class="form-check-label"></label>
+                    </div>
+                    <i class="bi bi-moon-fill"></i>
+                    <a href="javascript:void(0);" aria-label="dark mode">
+                        <em placement="bottom" ngbtooltip="Dark Mode" class="fas fa-moon"></em>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="d-none d-lg-inline-flex align-items-center ms-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown ms-3">
+                        <a role="button" href="javascript:void(0);" class="nav-link text-light" style="font-family: lato, sans-serif; font-weight: 700;">
+                            Topik&nbsp;
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5463 13.5666L16.7763 7.67509C16.9206 7.53883 17 7.35693 17 7.16297C17 6.96902 16.9206 6.78712 16.7763 6.65086L16.3176 6.21699C16.0188 5.93467 15.533 5.93467 15.2345 6.21699L10.0029 11.1642L4.76547 6.2115C4.62126 6.07523 4.42901 6 4.22402 6C4.0188 6 3.82656 6.07523 3.68224 6.2115L3.22366 6.64537C3.07945 6.78174 3 6.96353 3 7.15748C3 7.35144 3.07945 7.53334 3.22366 7.6696L9.45941 13.5666C9.60408 13.7032 9.79723 13.7782 10.0026 13.7778C10.2087 13.7782 10.4017 13.7032 10.5463 13.5666Z" fill="#616161"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a role="button" routerlinkactive="active" class="nav-link text-light" style="font-family: lato, sans-serif; font-weight: 700;" href="#"> Eksplorasi Dashboard </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a role="button" routerlinkactive="active" class="nav-link text-light" style="font-family: lato, sans-serif; font-weight: 700;" href="#"> Tentang </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a role="button" href="#" class="nav-link text-light" style="font-family: lato, sans-serif; font-weight: 700;"> Executive Dashboard </a>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="d-inline-flex d-lg-none align-items-center ms-auto">
+                <div class="toggler-sidebar-container">
+                    <button class="toggler-sidebar btn btn-link text-dark px-2">
+                        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="hamburger">
+                            <rect x="0.772461" width="19" height="2" rx="1" fill="white"></rect>
+                            <rect x="0.772461" y="6" width="19" height="2" rx="1" fill="white"></rect>
+                            <rect x="0.772461" y="12" width="19" height="2" rx="1" fill="white"></rect>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="menu-container d-none">
+        <!-- Topic Menu -->
+        <div class="topic-menu">
+            <div class="container">
+                <div class="row align-items-center mt-4 mb-4">
+                    <!-- Replace your topic links with the following structure -->
+                    <div class="col-auto topic-link me-4" data-target="subtopic-menu-masjid-aljabar">
+                        <a class="text-decoration-none text-secondary fw-bold" style="font-family: lato, sans-serif; font-weight: 700;" href="#subtopic-menu-masjid-aljabar">Masjid Al-Jabbar</a>
+                    </div>
+                    <div class="col-auto topic-link me-4" data-target="subtopic-menu-sosial">
+                        <a class="text-decoration-none text-secondary fw-bold" style="font-family: lato, sans-serif; font-weight: 700;" href="#subtopic-menu-sosial">Sosial</a>
+                    </div>
+                    <div class="col-auto topic-link me-4" data-target="subtopic-menu-kesehatan">
+                        <a class="text-decoration-none text-secondary fw-bold" style="font-family: lato, sans-serif; font-weight: 700;" href="#subtopic-menu-kesehatan">Kesehatan</a>
+                    </div>
+                    <div class="col-auto topic-link me-4" data-target="subtopic-menu-kependudukan">
+                        <a class="text-decoration-none text-secondary fw-bold" style="font-family: lato, sans-serif; font-weight: 700;" href="#subtopic-menu-kependudukan">Kependudukan</a>
+                    </div>
+                    <div class="col-auto topic-link me-4" data-target="subtopic-menu-industri">
+                        <a class="text-decoration-none text-secondary fw-bold" style="font-family: lato, sans-serif; font-weight: 700;" href="#subtopic-menu-industri">Industri</a>
+                    </div>
+                    <div class="col-auto topic-link me-4" data-target="subtopic-menu-pendidikan">
+                        <a class="text-decoration-none text-secondary fw-bold" style="font-family: lato, sans-serif; font-weight: 700;" href="#subtopic-menu-pendidikan">Pendidikan</a>
+                    </div>
+                    <div class="col-auto topic-link me-4" data-target="subtopic-menu-ekkeu">
+                        <a class="text-decoration-none text-secondary fw-bold" style="font-family: lato, sans-serif; font-weight: 700;" href="#subtopic-menu-ekkeu">Ekonomi dan Keuangan</a>
+                    </div>
+                    <div class="col-auto topic-link me-4" data-target="subtopic-menu-linghup">
+                        <a class="text-decoration-none text-secondary fw-bold" style="font-family: lato, sans-serif; font-weight: 700;" href="#subtopic-menu-linghup">Lingkungan Hidup</a>
+                    </div>
+                    <div class="col-auto topic-link me-4" data-target="subtopic-menu-kemiskinan">
+                        <a class="text-decoration-none text-secondary fw-bold" style="font-family: lato, sans-serif; font-weight: 700;" href="#subtopic-menu-kemiskinan">Kemiskinan</a>
+                    </div>
+                    <!-- Add other topic links as needed -->
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Sub-Topic Menus -->
+        <section id="subtopic-menu-masjid-aljabar" class="subtopic-menu">
+            <div class="container mt-5">
+                <div class="row mb-4 align-items-center">
+                    <div class="col">
+                        <h3 class="text-secondary" style="font-family: Lora, sans-serif; font-weight: 500;">Masjid Al-Jabbar</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="">
+                        <div class="row align-items-center">
+                            <div class="col-sm-3 menu-item d-flex border pt-3 pb-3 ps-3 rounded-4">
+                                <a class="text-decoration-none text-dark d-flex" href="#">
+                                    <div class="">
+                                        <img width="67px" height="67px" alt="icon sub topic" src="img/masjid_al_jabbar.png">
+                                    </div>
+                                    <div class="col mt-3 ms-4">
+                                        <h6 style="font-family: Lato, sans-serif; font-weight: 700;">Pengunjung & Kegiatan Masjid Al-Jabbar</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Add other content here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="subtopic-menu-sosial" class="subtopic-menu">
+            <div class="container mt-5">
+                <div class="row mb-4 align-items-center">
+                    <div class="col">
+                        <h3 class="text-secondary" style="font-family: Lora, sans-serif; font-weight: 500;">Sosial</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="">
+                        <div class="row align-items-center">
+                            <div class="col-sm-3 menu-item d-flex border pt-3 pb-3 ps-3 rounded-4">
+                                <a class="text-decoration-none text-dark d-flex" href="#">
+                                    <div class="">
+                                        <img width="67px" height="67px" alt="icon sub topic" src="img/sosial.svg">
+                                    </div>
+                                    <div class="col mt-4 ms-4">
+                                        <h6 style="font-family: Lato, sans-serif; font-weight: 700;">Overview Sosial</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Add other content here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="subtopic-menu-kesehatan" class="subtopic-menu">
+            <div class="container mt-5">
+                <div class="row mb-4 align-items-center">
+                    <div class="col">
+                        <h3 class="text-secondary" style="font-family: Lora, sans-serif; font-weight: 500;">Kesehatan</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="">
+                        <div class="row align-items-center">
+                            <div class="col-sm-3 menu-item d-flex border pt-3 pb-3 ps-3 rounded-4">
+                                <a class="text-decoration-none text-dark d-flex" href="#">
+                                    <div class="">
+                                        <img width="67px" height="67px" alt="icon sub topic" src="img/kesehatan.svg">
+                                    </div>
+                                    <div class="col mt-4 ms-4">
+                                        <h6 style="font-family: Lato, sans-serif; font-weight: 700;">Overview Kesehatan</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Add other content here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="subtopic-menu-kependudukan" class="subtopic-menu">
+            <div class="container mt-5">
+                <div class="row mb-4 align-items-center">
+                    <div class="col">
+                        <h3 class="text-secondary" style="font-family: Lora, sans-serif; font-weight: 500;">Kependudukan</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="">
+                        <div class="row align-items-center">
+                            <div class="col-sm-3 menu-item d-flex border pt-3 pb-3 ps-3 rounded-4">
+                                <a class="text-decoration-none text-dark d-flex" href="#">
+                                    <div class="">
+                                        <img width="67px" height="67px" alt="icon sub topic" src="img/kependudukan.svg">
+                                    </div>
+                                    <div class="col mt-4 ms-4">
+                                        <h6 style="font-family: Lato, sans-serif; font-weight: 700;">Overview Kependudukan</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Add other content here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="subtopic-menu-industri" class="subtopic-menu">
+            <div class="container mt-5">
+                <div class="row mb-4 align-items-center">
+                    <div class="col">
+                        <h3 class="text-secondary" style="font-family: Lora, sans-serif; font-weight: 500;">Industri</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="">
+                        <div class="row align-items-center">
+                            <div class="col-sm-3 menu-item d-flex border pt-3 pb-3 ps-3 rounded-4">
+                                <a class="text-decoration-none text-dark d-flex" href="#">
+                                    <div class="">
+                                        <img width="67px" height="67px" alt="icon sub topic" src="img/industri.svg">
+                                    </div>
+                                    <div class="col mt-3 ms-4">
+                                        <h6 style="font-family: Lato, sans-serif; font-weight: 700;">Industri vs Tenaga Kerja vs Investasi Jawab Barat</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Add other content here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="subtopic-menu-pendidikan" class="subtopic-menu">
+            <div class="container mt-5">
+                <div class="row mb-4 align-items-center">
+                    <div class="col">
+                        <h3 class="text-secondary" style="font-family: Lora, sans-serif; font-weight: 500;">Pendidikan</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="">
+                        <div class="row align-items-center">
+                            <div class="col-sm-3 menu-item d-flex border pt-3 pb-3 ps-3 rounded-4">
+                                <a class="text-decoration-none text-dark d-flex" href="#">
+                                    <div class="">
+                                        <img width="67px" height="67px" alt="icon sub topic" src="img/pendidikan.svg">
+                                    </div>
+                                    <div class="col mt-4 ms-4">
+                                        <h6 style="font-family: Lato, sans-serif; font-weight: 700;">Overview Pendidikan</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Add other content here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="subtopic-menu-ekkeu" class="subtopic-menu">
+            <div class="container mt-5">
+                <div class="row mb-4 align-items-center">
+                    <div class="col">
+                        <h3 class="text-secondary" style="font-family: Lora, sans-serif; font-weight: 500;">Ekonomi dan Keuangan</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="">
+                        <div class="row align-items-center">
+                            <div class="col-sm-3 menu-item d-flex border pt-3 pb-3 ps-3 rounded-4">
+                                <a class="text-decoration-none text-dark d-flex" href="#">
+                                    <div class="">
+                                        <img width="67px" height="67px" alt="icon sub topic" src="img/ekkeu.svg">
+                                    </div>
+                                    <div class="col mt-3 ms-4">
+                                        <h6 style="font-family: Lato, sans-serif; font-weight: 700;">Overview Ekonomi dan Keuangan</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Add other content here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="subtopic-menu-linghup" class="subtopic-menu">
+            <div class="container mt-5">
+                <div class="row mb-4 align-items-center">
+                    <div class="col">
+                        <h3 class="text-secondary" style="font-family: Lora, sans-serif; font-weight: 500;">Lingkungan Hidup</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="">
+                        <div class="row align-items-center">
+                            <div class="col-sm-3 menu-item d-flex border pt-3 pb-3 ps-3 rounded-4">
+                                <a class="text-decoration-none text-dark d-flex" href="#">
+                                    <div class="">
+                                        <img width="67px" height="67px" alt="icon sub topic" src="img/linghup.svg">
+                                    </div>
+                                    <div class="col mt-4 ms-4">
+                                        <h6 style="font-family: Lato, sans-serif; font-weight: 700;">Overview Lingkungan Hidup</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Add other content here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="subtopic-menu-kemiskinan" class="subtopic-menu">
+            <div class="container mt-5">
+                <div class="row mb-4 align-items-center">
+                    <div class="col">
+                        <h3 class="text-secondary" style="font-family: Lora, sans-serif; font-weight: 500;">Kemiskinan</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="">
+                        <div class="row align-items-center">
+                            <div class="col-sm-3 menu-item d-flex border pt-3 pb-3 ps-3 rounded-4">
+                                <a class="text-decoration-none text-dark d-flex" href="#">
+                                    <div class="">
+                                        <img width="67px" height="67px" alt="icon sub topic" src="img/kemiskinan.svg">
+                                    </div>
+                                    <div class="col mt-4 ms-4">
+                                        <h6 style="font-family: Lato, sans-serif; font-weight: 700;">Overview Kemiskinan</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Add other content here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Add other sub-topic menus as needed -->
+    </div>
+
+    
+        <section class="jumbotron div-1 bg-primary bg-cover pt-5 pb-5 container-fluid px-4 rounded-bottom-4 jumbotron-section">
+            <div class="container bg-primary text-white pb-5 mb-5">
+                <div class="row align-items-center mt-3 pt-5 pb-5 mb-5">
+                    <div class="col-12 col-lg mb-5 mb-lg-0">
+                      <h1 class="mb-1" style="font-family: Lora, sans-serif; font-weight: 700;">Hadirkan Visualisasi Data Jabar</h1>
+                      <br>
+                      <h1 class="mb-4" style="font-family: Lora, sans-serif; font-weight: 700;">Dalam Satu Kanal.</h1>
+                      <p class="pt-1 mb-4" style="font-family: Roboto, sans-serif; font-weight: 400;">
+                        Hadirkan angka, metriks, dan visualisasi data Jabar dalam satu kanal. <br>
+                        Bantu analisis data dan perumusan kebijakan menjadi lebih baik.
+                      </p>
+                      <div class="row pt-1">
+                        <div class="col-12 col-md-7">
+                          <div class="input-group input-search">
+                            <span class="input-group-text bg-transparent border-end-0">
+                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M10.4765 11.8907C9.49572 12.5892 8.29583 13 7 13C3.68629 13 1 10.3137 1 7C1 3.68629 3.68629 1 7 1C10.3137 1 13 3.68629 13 7C13 8.29583 12.5892 9.49572 11.8907 10.4765L14.7071 13.2929C15.0976 13.6834 15.0976 14.3166 14.7071 14.7071C14.3166 15.0976 13.6834 15.0976 13.2929 14.7071L10.4765 11.8907ZM11 7C11 9.20914 9.20914 11 7 11C4.79086 11 3 9.20914 3 7C3 4.79086 4.79086 3 7 3C9.20914 3 11 4.79086 11 7Z"
+                                  fill="#FFFF"></path>
+                              </svg>
+                            </span>
+                            <input placeholder="Cari dashboard" type="text" class="form-control">
+                            <span class="input-group-text">
+                              <a href="javascript:void(0);" class="btn btn-sm btn-primary text-light">Cari</a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <img src="img/jumbotron.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <br><br><br><br><br>
+        </section>
+        
+        
+
+        <section class="container div-1 topik-populer mt-5">
+            <div class="card rounded-4">
+                <div class="card-body px-5 py-5 mx-5 my-5">
+                    <div class="d-flex align-items-center mb-4">
+                         <!-- Horizontal line -->
+                        <h4 class="card-title ms-5 mb-0" style="font-family: Lora, sans-serif; font-weight: 700;">Topik Populer</h4>
+                        <hr class="flex-grow-1 ms-4 me-4">
+                        <button class="btn btn-outline-primary me-5 px-3 py-2" style="font-family: Lato, sans-serif;"><strong>Eksplor Lebih Banyak <i class="bi bi-box-arrow-up-right ms-1"></i></strong></button>
+                    </div>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="d-flex mt-5">
+                                    <div class="card me-5 ms-5 px-3 pt-3 pb-4 rounded-4" style="height: fit-content; width: 18rem;">
+                                        <img src="img/sosial.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center" style="font-family: Roboto, sans-serif; font-weight: 400; font-size: 16px;">Sosial</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card me-5 ms-5 px-3 pt-3 pb-4 rounded-4" style="height: fit-content; width: 18rem;">
+                                        <img src="img/kesehatan.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center" style="font-family: Roboto, sans-serif; font-weight: 400; font-size: 16px;">Kesehatan</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card me-5 ms-5 px-3 pt-3 pb-4 rounded-4" style="height: fit-content; width: 18rem;">
+                                        <img src="img/kependudukan.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center" style="font-family: Roboto, sans-serif; font-weight: 400; font-size: 16px;">Kependudukan</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card me-5 ms-5 px-3 pt-3 pb-4 rounded-4" style="height: fit-content; width: 18rem;">
+                                        <img src="img/industri.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center" style="font-family: Roboto, sans-serif; font-weight: 400; font-size: 16px;">Industri</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="d-flex mt-5">
+                                    <div class="card me-5 ms-5 px-3 pt-3 pb-4 rounded-4" style="height: fit-content; width: 18rem;">
+                                        <img src="img/pendidikan.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center" style="font-family: Roboto, sans-serif; font-weight: 400; font-size: 16px;">Pendidikan</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card me-5 ms-5 px-3 pt-3 pb-1 rounded-4" style="height: fit-content; width: 18rem;">
+                                        <img src="img/ekkeu.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center" style="font-family: Roboto, sans-serif; font-weight: 400; font-size: 16px;">Ekonomi dan Keuangan</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card me-5 ms-5 px-3 pt-3 pb-1 rounded-4" style="height: fit-content; width: 18rem;">
+                                        <img src="img/linghup.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center" style="font-family: Roboto, sans-serif; font-weight: 400; font-size: 16px;">Lingkungan Hidup</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card me-5 ms-5 px-3 pt-3 pb-4 rounded-4" style="height: fit-content; width: 18rem;">
+                                        <img src="img/kemiskinan.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center" style="font-family: Roboto, sans-serif; font-weight: 400; font-size: 16px;">Kemiskinan</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel Controls -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br><br>
+
+        <div id="banner">
+            <div class="container dashboard-terbaru mb-5">
+              <div class="row align-items-center mb-5">
+                <div class="col">
+                  <div class="d-inline-flex align-items-center">
+                    <h3 class="section-title m-0" style="font-family: Lora, sans-serif; font-weight: 700;">Dashboard Terbaru</h3>
+                  </div>
+                </div>
+              </div>
+        
+              <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="#">
+                      <img src="https://data.jabarprov.go.id/api-dashboard-jabar//static/upload/bba9e8de98e9eeadc5d785d5f13503e4e66b31f448a13d8bbc4c0b6f17d4d7ba.svg"
+                        class="d-block w-100" alt="Dashboard Masjid Al-Jabbar">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#">
+                      <img src="https://data.jabarprov.go.id/api-dashboard-jabar//static/upload/c050f03134774833ab22e9809d707532cc7ec31c7d5a7f164729fc7b1baa3d60.png"
+                        class="d-block w-100" alt="Dashboard Pendapatan Daerah Jawa Barat">
+                    </a>
+                  </div>
+                  <!-- Add more slides as needed -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        
+              <div class="col-12">
+                <div class="banner-pagination text-center">
+                  <!-- Bootstrap Carousel does not require separate pagination bullets -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br> <br>
+
+          <style>
+            /* Style untuk garis vertikal */
+            .vertical-line {
+              border-left: 1px solid; /* Warna dan ketebalan garis dapat disesuaikan */
+              height: 15vh; /* Sesuaikan tinggi garis sesuai kebutuhan */
+            }
+          </style>
+
+          <section id="highlight">
+            <img src="img/landing-accent-topic-wave.svg" alt="Accent topic wave" class="accent-wave-bg">
+            <div class="container">
+              <div class="row align-items-center mb-5">
+                <div class="col">
+                  <h3 class="section-title" style="font-family: Lora, sans-serif; font-weight: 700;">Highlight</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div id="highlight-carousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                              <div class="card bg-primary text-white">
+                                <div class="card-body">
+                                    <div class="row pt-3 ps-2">
+                                        <div class="col-auto">
+                                            <img src="img/topic-kependudukan.svg" width="35px" height="35px" alt="">
+                                        </div>
+                                        <div class="col-auto">
+                                            <h4 class="card-title" style="font-family: Roboto, sans-serif; font-weight: 500; font-size: 28px;">Kependudukan</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-4 ps-2">
+                                        <div class="col-4">
+                                            <p class="card-text" style="font-family: Roboto, sans-serif; font-weight: 500;"><strong>Jumlah Penduduk</strong>
+                                                <strong style="font-size: 20px;">48.220.094</strong> Jiwa</p>
+                                            <p class="card-text" style="font-family: Lato, sans-serif; font-weight: 500; font-size: 12px;">
+                                                Data tahun 2021
+                                            </p>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="vertical-line">
+                                                <p class="card-text ps-2" style="font-family: Roboto, sans-serif; font-weight: 500;"><strong>Luas Wilayah</strong>
+                                                    <br> <strong style="font-size: 20px;">37.164,6</strong> km2</p>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="vertical-line">
+                                                <p class="card-text ps-2" style="font-family: Roboto, sans-serif; font-weight: 500;"><strong>Kepadatan Penduduk</strong>
+                                                    <strong style="font-size: 20px;">1.297,47</strong> Jiwa/km2</p>
+                                                <p class="card-text ps-2" style="font-family: Lato, sans-serif; font-weight: 500; font-size: 12px;">
+                                                    Data tahun 2021
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row pt-3 ps-2">
+                                            <div class="col-auto">
+                                                <img src="img/topic-kesehatan.svg" width="35px" height="35px" alt="">
+                                            </div>
+                                            <div class="col-auto">
+                                                <h4 class="card-title" style="font-family: Roboto, sans-serif; font-weight: 500; font-size: 28px;">Kesehatan</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-4 ps-2">
+                                            <div class="col-4">
+                                                <p class="card-text text-secondary" style="font-family: Roboto, sans-serif; font-weight: 500;"><strong>Angka Harapan Hidup</strong>
+                                                    <strong style="font-size: 20px;">73,38</strong> Tahun</p>
+                                                <p class="card-text text-secondary" style="font-family: Lato, sans-serif; font-weight: 500; font-size: 12px;">
+                                                    Data tahun 2021
+                                                </p>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="vertical-line">
+                                                    <p class="card-text text-secondary ps-2" style="font-family: Roboto, sans-serif; font-weight: 500;"><strong>Rata - rata Nasional</strong>
+                                                        <strong style="font-size: 20px;">70,2</strong> Tahun</p>
+                                                    <p class="card-text text-secondary ps-2" style="font-family: Lato, sans-serif; font-weight: 500; font-size: 12px;">
+                                                    Data tahun 2021
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="vertical-line">
+                                                    <p class="card-text text-secondary ps-2" style="font-family: Roboto, sans-serif; font-weight: 500;"><strong>Peringkat Nasional</strong>
+                                                        <br><strong style="font-size: 20px;">4/34</strong> Provinsi</p>
+                                                    <p class="card-text text-secondary ps-2" style="font-family: Lato, sans-serif; font-weight: 500; font-size: 12px;">
+                                                        Data tahun 2021
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row pt-3 ps-2">
+                                            <div class="col-auto">
+                                                <img src="img/topic-pendidikan.svg" width="35px" height="35px" alt="">
+                                            </div>
+                                            <div class="col-auto">
+                                                <h4 class="card-title" style="font-family: Roboto, sans-serif; font-weight: 500; font-size: 28px;">Pendidikan</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-4 ps-2">
+                                            <div class="col-4">
+                                                <p class="card-text text-secondary" style="font-family: Roboto, sans-serif; font-weight: 500;"><strong>Angka Melek Huruf</strong>
+                                                    <strong style="font-size: 20px;">98,49</strong> %</p>
+                                                <p class="card-text text-secondary" style="font-family: Lato, sans-serif; font-weight: 500; font-size: 12px;">
+                                                    Data tahun 2022
+                                                </p>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="vertical-line">
+                                                    <p class="card-text text-secondary ps-2" style="font-family: Roboto, sans-serif; font-weight: 500;"><strong>Rata - rata Nasional</strong>
+                                                        <strong style="font-size: 20px;">96,69</strong> %</p>
+                                                    <p class="card-text text-secondary ps-2" style="font-family: Lato, sans-serif; font-weight: 500; font-size: 12px;">
+                                                    Data tahun 2022
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="vertical-line">
+                                                    <p class="card-text text-secondary ps-2" style="font-family: Roboto, sans-serif; font-weight: 500;"><strong>Peringkat Nasional</strong>
+                                                        <br><strong style="font-size: 20px;">12/34</strong> Provinsi</p>
+                                                    <p class="card-text text-secondary ps-2" style="font-family: Lato, sans-serif; font-weight: 500; font-size: 12px;">
+                                                        Data tahun 2022
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row pt-3 ps-2">
+                                            <div class="col-auto">
+                                                <img src="img/topic-industri.svg" width="35px" height="35px" alt="">
+                                            </div>
+                                            <div class="col-auto">
+                                                <h4 class="card-title" style="font-family: Roboto, sans-serif; font-weight: 500; font-size: 28px;">Industri</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-4 ps-2">
+                                            <div class="col-4">
+                                                <p class="card-text text-secondary" style="font-family: Roboto, sans-serif; font-weight: 500;"><strong>Jumlah UMKM</strong>
+                                                    <strong style="font-size: 20px;">1.494.723</strong> Unit</p>
+                                                <p class="card-text text-secondary" style="font-family: Lato, sans-serif; font-weight: 500; font-size: 12px;">
+                                                    Data tahun 2022
+                                                </p>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="vertical-line">
+                                                    <p class="card-text text-secondary ps-2" style="font-family: Roboto, sans-serif; font-weight: 500;"><strong>Persentase Kontribusi Jabar</strong>
+                                                        <strong style="font-size: 20px;">16,36</strong> %</p>
+                                                    <p class="card-text text-secondary ps-2" style="font-family: Lato, sans-serif; font-weight: 500; font-size: 12px;">
+                                                    Data tahun 2022
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="vertical-line">
+                                                    <p class="card-text text-secondary ps-2" style="font-family: Roboto, sans-serif; font-weight: 500;"><strong>Peringkat Nasional</strong>
+                                                        <br><strong style="font-size: 20px;">1/34</strong> Provinsi</p>
+                                                    <p class="card-text text-secondary ps-2" style="font-family: Lato, sans-serif; font-weight: 500; font-size: 12px;">
+                                                        Data tahun 2022
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#highlight-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#highlight-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="container mt-4 mb-5">
+            <div class="row">
+              <div class="col-12">
+                <div class="card px-4 pt-4 m-0">
+                  <div class="card-body">
+                    <div class="row d-flex">
+                      <div class="col-lg-4 mb-md-4 mb-lg-0">
+                        <app-comp-filter-map-opendata>
+                          <div id="filter-map-opendata" class="card card-chart">
+                            <div class="card-header ps-4 pe-4">
+                              <h5 class="mb-3 mt-3" style="font-family: Lora, sans-serif; font-weight: 700;">Visualisasi Peta</h5>
+                              <div class="input-group input-search both align-items-center pb-3">
+                                <span class="input-group-text left h-auto"><i class="bi bi-search"></i></span>
+                                <input type="text" placeholder="Cari" class="form-control input-organization ng-untouched ng-pristine ng-valid">
+                                <span class="btn-open-filter input-group-text right h-auto"><i class="bi bi-sliders2"></i></span>
+                                <!---->
+                              </div>
+                            </div>
+                            <div class="card-body" style="overflow-y: auto; padding: 0 0 10px 0;">
+                                <ul class="list-group list-group-flush" style="max-height: 450px; overflow-y: auto;">
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Kepadatan Penduduk Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Angka Harapan Hidup Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Indeks Kesehatan Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Rumah Sakit (RS) Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Dokter Umum Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Tenaga Keperawatan Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Dokter Spesialis Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Dokter Gigi Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Balita Stunting Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Persentase Balita Stunting Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Pendapatan Asli Daerah di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Pengeluaran per Kapita Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Indeks Pengeluaran Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Asset Koperasi Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Data Industri Besar Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Investasi Pada Unit Industri Kecil, Menengah dan Besar Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Investasi Penanaman Modal Asing Berdasarkan Kabupaten/Kota (dalam Rupiah) di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Investasi Penanaman Modal Dalam Negeri Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Kelompok Usaha Produktif Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Proyek Penanaman Modal Asing Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Proyek Penanaman Modal Dalam Negeri Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Tenaga Kerja Pada Unit Industri Kecil, Menengah dan Besar Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Unit Industri Kecil, Menengah dan Besar Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <li class="list-group-item btn btn-outline-primary text-start px-4 py-4" style="font-family: Lato, sans-serif; font-size: 18px;">Jumlah Usaha Mikro Kecil Menengah (UMKM) Berdasarkan Kabupaten/Kota di Jawa Barat</li>
+                                  <!-- Add other list items as needed -->
+                                  
+                                  <!-- Continue adding list items -->
+                                </ul>
+                              </div>                              
+                          </div>
+                        </app-comp-filter-map-opendata>
+                        <!---->
+                      </div>
+                      <div class="col-lg-8 mb-lg-0">
+                        <app-comp-map-opendata>
+                          <div class="map-opendata card card-chart mb-0">
+                            <div class="card-body">
+                              <!-- Map content here -->
+                              <div class="row mb-2 px-3 py-3">
+                                <div class="col col-auto map-title-opendata" style="font-family: Lato, sans-serif; font-size: 18px; font-weight: bold;">Angka Harapan Hidup Berdasarkan Kabupaten/Kota di Jawa Barat - Tahun 2022</div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028148.510887689!2d106.28537194822277!3d-6.863309839899408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0xbc18a454fc8e9d7e!2sJawa%20Barat!5e0!3m2!1sid!2sid!4v1701649237211!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              </div>
+                              
+                              <div class="leaflet-pane leaflet-map-pane">
+                                
+                              </div>
+                              <div class="map-controls"></div>
+                              <!---->
+                              <div class="row mb-2">
+                                <div class="col-12 text-center" style="font-family: Lato, sans-serif; font-size: 18px;">Keterangan</div>
+                              </div>
+                              <!---->
+                              <div class="row legend-container legend-opendata d-flex justify-content-start align-items-center flex-wrap">
+                                <div class="legend-item d-inline-flex align-items-center justify-content-center col-md-4 flex-wrap mb-2 active" id="legend-sebaran-kasus-bar-0">
+                                  <svg width="20" height="20" class="me-2">
+                                    <rect x="5" y="5" width="10" height="10" fill="#E9EDF1"></rect>
+                                  </svg>
+                                  <span style="font-family: Lato, sans-serif; font-size: 12px;">0 - 0</span>
+                                </div>
+                                <div class="legend-item d-inline-flex align-items-center justify-content-center col-md-4 flex-wrap mb-2 active" id="legend-sebaran-kasus-bar-1">
+                                  <svg width="20" height="20" class="me-2">
+                                    <rect x="5" y="5" width="10" height="10" fill="#c2cdd8"></rect>
+                                  </svg>
+                                  <span style="font-family: Lato, sans-serif; font-size: 12px;">494 - 1.210</span>
+                                </div>
+                                <div class="legend-item d-inline-flex align-items-center justify-content-center col-md-4 flex-wrap mb-2 active" id="legend-sebaran-kasus-bar-2">
+                                  <svg width="20" height="20" class="me-2">
+                                    <rect x="5" y="5" width="10" height="10" fill="#849AB0"></rect>
+                                  </svg>
+                                  <span style="font-family: Lato, sans-serif; font-size: 12px;">1.211 - 1.490</span>
+                                </div>
+                                <div class="legend-item d-inline-flex align-items-center justify-content-center col-md-4 flex-wrap mb-2 active" id="legend-sebaran-kasus-bar-3">
+                                  <svg width="20" height="20" class="me-2">
+                                    <rect x="5" y="5" width="10" height="10" fill="#65819D"></rect>
+                                  </svg>
+                                  <span style="font-family: Lato, sans-serif; font-size: 12px;">1.491 - 2.035</span>
+                                </div>
+                                <div class="legend-item d-inline-flex align-items-center justify-content-center col-md-4 flex-wrap mb-2 active" id="legend-sebaran-kasus-bar-4">
+                                  <svg width="20" height="20" class="me-2">
+                                    <rect x="5" y="5" width="10" height="10" fill="#466789"></rect>
+                                  </svg>
+                                  <span style="font-family: Lato, sans-serif; font-size: 12px;">2.036 - 3.261</span>
+                                </div>
+                                <div class="legend-item d-inline-flex align-items-center justify-content-center col-md-4 flex-wrap mb-2 active" id="legend-sebaran-kasus-bar-5">
+                                  <svg width="20" height="20" class="me-2">
+                                    <rect x="5" y="5" width="10" height="10" fill="#083461"></rect>
+                                  </svg>
+                                  <span style="font-family: Lato, sans-serif; font-size: 12px;">3.262 - 6.645</span>
+                                </div>
+                              </div>
+                              
+                              <!---->
+                              <!---->
+                            </div>
+                          </div>
+                        </app-comp-map-opendata>
+                        <!---->
+                        <app-comp-error-request _nghost-dashboard-public-frontend-c106="">
+                          <!---->
+                          <!---->
+                        </app-comp-error-request>
+                        <div class="alert alert-info text-dark text-center d-flex flex-row mt-3 small">
+                          <div class="me-2">
+                            <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <i class="bi bi-exclamation-circle-fill"></i>
+                            </svg>
+                          </div>
+                          <div class="m-0">
+                            <strong style="font-family: Lato, sans-serif; font-size: 14px; font-weight: bold;">Sumber Data:</strong>&nbsp;
+                            <a target="_blank" class="text-blue-700" href="https://opendata.jabarprov.go.id/id/dataset/angka-harapan-hidup-berdasarkan-kabupatenkota-di-jawa-barat" style="font-family: Lato, sans-serif; font-size: 14px;">Dataset Angka Harapan Hidup Berdasarkan Kabupaten/Kota di Jawa Barat - Tahun 2022</a>
+                          </div>
+                        </div>
+                        <!---->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="public-footer">
+            <footer class="bg-primary py-1 text-white">
+              <div class="container footer-1">
+                <div class="row mb-1 pt-5 pb-3 mt-5">
+                  <div class="col-12">
+                    <a class="navbar-brand" href="#">
+                      <img alt="Logo Dashboard Jabar" height="180px" width="180px" src="img/logo-dark.svg">
+                    </a>
+                  </div>
+                </div>
+                <div class="row pb-4">
+                  <div class="col-12 col-md-4">
+                    <ul>
+                      <li class="d-flex">
+                        <i class="bi bi-geo-alt-fill me-3"></i>
+                        <div>
+                          <strong style="font-family: Roboto, sans-serif; font-weight: 700;">Gedung Sate Bandung</strong>
+                          <p style="font-family: Lato, sans-serif; font-weight: 400;">Jl. Diponegoro No.22, Citarum, Bandung Wetan, Kota Bandung, Jawa Barat 40115</p>
+                        </div>
+                      </li>
+                      <hr>
+                      <li class="d-flex">
+                        <i class="bi bi-telephone-fill me-3"></i>
+                        <div>
+                          <strong style="font-family: Roboto, sans-serif; font-weight: 700;">Telepon</strong>
+                          <p style="font-family: Lato, sans-serif; font-weight: 400;">+62 821-2603-0038 (Whatsapp)</p>
+                        </div>
+                      </li>
+                      <hr>
+                      <li class="d-flex">
+                        <i class="bi bi-envelope-fill me-3"></i>
+                        <div>
+                          <strong style="font-family: Roboto, sans-serif; font-weight: 700;">Email</strong>
+                          <p style="font-family: Lato, sans-serif; font-weight: 400;"><a href="mailto:data@jabarprov.go.id" aria-label="send email" target="_blank"></a>data@jabarprov.go.id</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <ul>
+                      <li class="d-flex">
+                        <img src="img/footer-dashboard-jabar-mini.svg" height="16px" width="16px" alt="logo dashboard jabar mini" class="footer-icon mt-1 me-3">
+                        <div>
+                          <strong style="font-family: Roboto, sans-serif; font-weight: 700;">Dashboard Jabar</strong>
+                            <p style="font-family: Lato, sans-serif; font-weight: 400;" class="d-flex"><a href="#" class="text-white justify-content-start text-start" style="text-decoration: none;">Tentang</a></p>
+                        </div>
+                      </li>
+                      <hr>
+                      <li class="d-flex">
+                        <i class="bi bi-stack me-3"></i>
+                        <div>
+                          <strong style="font-family: Roboto, sans-serif; font-weight: 700;" class="mb-3">Ekosistem Data Jabar</strong>
+                          <p></p>
+                            <p style="font-family: Lato, sans-serif; font-weight: 400;" class="d-flex"><a href="#" class="text-white justify-content-start text-start" style="text-decoration: none;">Open Data Jabar</a></p>
+                            <p style="font-family: Lato, sans-serif; font-weight: 400;" class="d-flex"><a href="#" class="text-white justify-content-start text-start" style="text-decoration: none;">Satu Data Jabar</a></p>
+                            <p style="font-family: Lato, sans-serif; font-weight: 400;" class="d-flex"><a href="#" class="text-white justify-content-start text-start" style="text-decoration: none;">Satu Peta Jabar</a></p>
+                          
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <ul>
+                        <li class="d-flex">
+                            <i class="bi bi-people-fill me-3"></i>
+                            <div>
+                              <strong style="font-family: Roboto, sans-serif; font-weight: 700;">Social Media</strong>
+                              <div class="d-flex">
+                                <p class="me-4 mt-2"><a href="#" class="btn border text-white justify-content-start text-start" style="text-decoration: none;"><i class="bi bi-linkedin"></i></a></p>
+                                <p class="me-4 mt-2"><a href="#" class="btn border text-white justify-content-start text-start" style="text-decoration: none;"><i class="bi bi-instagram"></i></a></p>
+                                <p class="mt-2"><a href="#" class="btn border text-white justify-content-start text-start" style="text-decoration: none;"><i class="bi bi-youtube"></i></i></a></p>
+                              </div>
+                            </div>
+                          </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="container footer-2">
+                <div class="row">
+                  <div class="col-12">
+                    <span style="font-family: Lato, sans-serif; font-weight: 400;">Copyright © 2023 Pemerintahan Daerah Provinsi Jawa Barat. All Right Reserved</span>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </section>
+          
+          
+          
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const darkModeToggle = document.getElementById("toggleDarkmode");
+            const body = document.body;
+    
+            // Check the user's preference for dark mode
+            const isDarkMode = localStorage.getItem("darkMode") === "true";
+    
+            // Set initial dark mode state
+            setDarkMode(isDarkMode);
+    
+            // Toggle dark mode on button click
+            darkModeToggle.addEventListener("change", function() {
+                setDarkMode(darkModeToggle.checked);
+            });
+    
+            // Function to set dark mode
+            function setDarkMode(isDark) {
+                if (isDark) {
+                    body.classList.add("dark-mode");
+                    localStorage.setItem("darkMode", "true");
+                } else {
+                    body.classList.remove("dark-mode");
+                    localStorage.setItem("darkMode", "false");
+                }
+            }
+
+            // Add click event for the "Topik" button
+            const topikButton = document.querySelector('.nav-link[role="button"]');
+            topikButton.addEventListener("click", function () {
+                // Toggle the visibility of the menu container
+                const menuContainer = document.querySelector(".menu-container");
+                const isMenuHidden = menuContainer.classList.contains("d-none");
+
+                if (isMenuHidden) {
+                    menuContainer.classList.remove("d-none");
+                    document.body.classList.add("menu-open"); // Add this line to modify body class
+                } else {
+                    menuContainer.classList.add("d-none");
+                    document.body.classList.remove("menu-open"); // Add this line to modify body class
+                }
+            });
+
+        // Add click event for topic links
+        const topicLinks = document.querySelectorAll(".topic-link");
+        topicLinks.forEach(function (topicLink) {
+            topicLink.addEventListener("click", function () {
+                // Get the target sub-topic menu id
+                const targetId = topicLink.getAttribute("data-target");
+
+                // Hide all sub-topic menus
+                const subtopicMenus = document.querySelectorAll(".subtopic-menu");
+                subtopicMenus.forEach(function (subtopicMenu) {
+                    subtopicMenu.classList.add("d-none");
+                });
+
+                // Show the target sub-topic menu
+                const targetMenu = document.getElementById(targetId);
+                if (targetMenu) {
+                    targetMenu.classList.remove("d-none");
+                }
+            });
+        });
+    });
+    </script>
+
+   
+  
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

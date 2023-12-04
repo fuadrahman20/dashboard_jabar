@@ -1,0 +1,19 @@
+.dark-mode {
+    background-color: #212529; /* Dark background color */
+    color: #ffffff; /* Light text color */
+  }
+
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Set a background color if needed */
+    display: none;
+    z-index: -1; /* Set a default z-index value */
+}
+
+.menu-container.menu-open {
+    display: block;
+    z-index: 1000; /* Set a higher z-index value when the menu is open */
+}
